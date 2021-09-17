@@ -1,0 +1,1 @@
+scoreboard objectives add throw_eye minecraft.used:minecraft.ender_eye

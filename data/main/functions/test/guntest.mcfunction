@@ -1,0 +1,2 @@
+summon creeper ~ ~ ~ {PersistenceRequired:1b,NoGravity:1b,NoAI:1b,Tags:["guntest"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"E-11","color":"aqua"}'},Unbreakable:1b,CustomModelData:2430001,bolt:1b,gun:1b,blaster:1b,range:3000,dt:3000,damage:5,cd:20,mcd:20}},{}]}
+tp @e[type=creeper,tag=guntest] ~ ~ ~ ~ 0

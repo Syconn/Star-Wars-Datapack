@@ -1,0 +1,2 @@
+#CHEST
+give @s glow_item_frame{display:{Name:'{"text":"Holocron","color":"aqua"}'},CustomModelData:2433001,EntityTag:{Silent:1b,Tags:["holocron"],Item:{id:"minecraft:glow_item_frame",Count:1b,tag:{CustomModelData:2433001}},Invulnerable:1b,Invisible:1b,Fixed:1b}} 1

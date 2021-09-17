@@ -1,0 +1,1 @@
+summon creeper ~ ~.5 ~ {Fuse:1,powered:1b,ignited:1b,ExplosionRadius:2}

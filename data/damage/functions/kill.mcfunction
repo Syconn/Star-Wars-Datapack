@@ -1,0 +1,4 @@
+execute if entity @s[type=player] if entity @e[type=player,tag=raycasting,sort=nearest,limit=1] run tellraw @a [{"selector":"@s","color":"white"},{"text":" died to "},{"selector":"@e[tag=raycasting,sort=nearest,limit=1]"},{"text":"'s "},{"nbt":"SelectedItem.tag.display.Name","entity":"@e[tag=raycasting,sort=nearest,limit=1]","interpret":true}]
+execute if entity @s[type=player] if entity @e[type=!player,tag=raycasting,sort=nearest,limit=1] run tellraw @a [{"selector":"@s","color":"white"},{"text":" died to "},{"selector":"@e[tag=raycasting,sort=nearest,limit=1]"},{"text":"'s "},{"nbt":"HandItems[0].tag.display.Name","entity":"@e[tag=raycasting,sort=nearest,limit=1]","interpret":true}]
+
+kill @s

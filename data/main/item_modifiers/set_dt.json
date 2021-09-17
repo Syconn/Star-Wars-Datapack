@@ -1,0 +1,17 @@
+[
+    {
+      "function": "minecraft:copy_nbt",
+      "source": {
+        "type": "minecraft:storage",
+        "source": "minecraft:guns"
+      },
+      "ops": [
+        {
+          "source": "dt",
+          "target": "dt",
+          "op": "replace"
+        }
+      ]
+    }
+  ]
+  

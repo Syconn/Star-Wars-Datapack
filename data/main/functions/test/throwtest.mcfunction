@@ -1,0 +1,3 @@
+summon husk ~ ~ ~ {PersistenceRequired:1b,NoGravity:1b,Silent:1b,NoAI:1b,Tags:["lightsaber"],HandItems:[{id:"minecraft:warped_fungus_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"Purple Lightsaber","color":"dark_purple"}'},CustomModelData:2431001,lightsaber:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:8,Operation:0,UUID:[I;1211705953,998064645,-2069762326,-1321630055],Slot:"mainhand"}]}},{}]}
+tp @e[type=husk,tag=lightsaber] ~ ~ ~ ~ ~
+execute as @e[tag=lightsaber] unless entity @s[scores={id=0..}] run scoreboard players set @s id 0

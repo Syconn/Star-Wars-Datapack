@@ -1,0 +1,6 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"E-11","color":"aqua"}'},Unbreakable:1b,CustomModelData:2430001,bolt:1b,gun:1b,blaster:1b,range:3000,dt:3000,damage:5,cd:20,mcd:20} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"Sniper","color":"red"}'},Unbreakable:1b,CustomModelData:2430002,bolt:1b,gun:1b,sniper:1b,range:9000,dt:9000,damage:10,cd:40,mcd:40} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"Bazoka","color":"black"}'},Unbreakable:1b,CustomModelData:2430003,rocket:1b,gun:1b,rpg:1b,range:4500,dt:4500,damage:10,cd:40,mcd:40} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"Pistol","color":"green"}'},Unbreakable:1b,CustomModelData:2430004,bolt:1b,gun:1b,blaster:1b,range:1500,dt:1500,damage:3,cd:5,mcd:5} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"DC-17","color":"aqua"}'},Unbreakable:1b,CustomModelData:2430005,bolt:1b,gun:1b,blaster:1b,range:3000,dt:3000,damage:4,cd:8,mcd:8} 1
+give @s carrot_on_a_stick{display:{Name:'{"text":"Minigun","color":"purple"}'},Unbreakable:1b,CustomModelData:2430106,defModelData:2430106,anim:4,bolt:1b,gun:1b,blaster:1b,range:1000,dt:1000,damage:1,cd:2,mcd:2} 1
