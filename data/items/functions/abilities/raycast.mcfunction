@@ -13,7 +13,7 @@ scoreboard players remove dt .temp 1
 execute store result storage minecraft:guns dt int 1 run scoreboard players get dt .temp
 item modify entity @e[tag=raycasting,limit=1,sort=nearest] weapon.mainhand main:set_dt
 
-execute if score dt .temp >= 0 num positioned ^ ^ ^0.5 rotated ~ ~ if block ~ ~ ~ #main:raytrace_pass run function items:abilities/raycast
+execute if score dt .temp >= 0 st_num positioned ^ ^ ^0.5 rotated ~ ~ if block ~ ~ ~ #main:raytrace_pass run function items:abilities/raycast
 execute if entity @e[tag=raycasting,nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{rocket:1b}}}] positioned ^ ^ ^0.5 unless block ~ ~ ~ #main:raytrace_pass run function damage:explosion
 execute if entity @e[tag=raycasting,nbt={HandItems:[{id:"minecraft:carrot_on_a_stick",tag:{rocket:1b}}]}] positioned ^ ^ ^0.5 unless block ~ ~ ~ #main:raytrace_pass run function damage:explosion
 

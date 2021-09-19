@@ -1,4 +1,4 @@
-scoreboard players set @s rc 0
+scoreboard players set @s st_rc 0
 
 execute if entity @s[type=player] run data modify storage minecraft:guns cd set value 1
 execute if entity @s[type=player] run item modify entity @s weapon.mainhand main:set_cd

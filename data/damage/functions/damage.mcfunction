@@ -5,15 +5,15 @@ item modify entity @e[tag=raycasting,limit=1,sort=nearest] weapon.mainhand main:
 #BLOCK DETECTION
 execute store result score .xHitRot .damage run data get entity @s Rotation[0]
 execute store result score .xThrowerRot .damage run data get entity @e[tag=raycasting,sort=nearest,limit=1] Rotation[0]
-scoreboard players operation .xThrowerRot .damage *= -1 num
+scoreboard players operation .xThrowerRot .damage *= -1 st_num
 
 scoreboard players operation .xRotMin .damage = .xHitRot .damage
 scoreboard players operation .xRotMax .damage = .xHitRot .damage
 
-scoreboard players operation .xRotMin .damage -= 90 num
-scoreboard players operation .xRotMax .damage += 90 num
+scoreboard players operation .xRotMin .damage -= 90 st_num
+scoreboard players operation .xRotMax .damage += 90 st_num
 
-execute if score .xThrowerRot .damage >= .xRotMin .damage if score .xThrowerRot .damage <= .xRotMax .damage if score @s bc matches 1.. if score @s shift_time matches 1.. run tag @s add blocked
+execute if score .xThrowerRot .damage >= .xRotMin .damage if score .xThrowerRot .damage <= .xRotMax .damage if score @s st_bc matches 1.. if score @s shift_time matches 1.. run tag @s add blocked
 
 #DAMAGING
 #   - REMOVE ABSORPTION BECUASE BREAKS SYSTEM
@@ -25,13 +25,13 @@ execute if entity @e[tag=raycasting,type=!player,sort=nearest,limit=1] store res
 execute store result score .health .damage run data get entity @s Health
 
 #   - CHECKS IF HEAD SHOT
-execute if entity @s[type=#main:humanoid,distance=1.65..] run scoreboard players operation .damage .damage *= 2 num
+execute if entity @s[type=#main:humanoid,distance=1.65..] run scoreboard players operation .damage .damage *= 2 st_num
 scoreboard players operation .health .damage -= .damage .damage
 
 #   - APPLIES TO PLAYER
 #       - FIND ALTERNATIVE TO MULT BY 10
 execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage += .damage .damage
-execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage *= 10 num
+execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage *= 10 st_num
 
 execute if score .health .damage matches ..0 as @s run function damage:kill
 

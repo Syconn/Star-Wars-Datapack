@@ -32,13 +32,13 @@ scoreboard players operation .dz .temp = .az .temp
 scoreboard players operation .dx .temp -= .px .temp
 scoreboard players operation .dy .temp -= .py .temp
 scoreboard players operation .dz .temp -= .pz .temp
-execute if score .dx .temp matches ..0 run scoreboard players operation .dx .temp *= -1 num
-execute if score .dy .temp matches ..0 run scoreboard players operation .dy .temp *= -1 num
-execute if score .dz .temp matches ..0 run scoreboard players operation .dz .temp *= -1 num
+execute if score .dx .temp matches ..0 run scoreboard players operation .dx .temp *= -1 st_num
+execute if score .dy .temp matches ..0 run scoreboard players operation .dy .temp *= -1 st_num
+execute if score .dz .temp matches ..0 run scoreboard players operation .dz .temp *= -1 st_num
 scoreboard players operation .distance .temp = .dx .temp
 scoreboard players operation .distance .temp += .dy .temp
 scoreboard players operation .distance .temp += .dz .temp
-execute if score .distance .temp matches ..0 run scoreboard players operation .distance .temp *= -1 num
+execute if score .distance .temp matches ..0 run scoreboard players operation .distance .temp *= -1 st_num
 execute as @s if score .distance .temp matches 8.. run tag @s add drop
 execute as @s if score .distance .temp matches 60.. run kill @s
 

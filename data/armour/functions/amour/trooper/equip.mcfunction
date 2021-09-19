@@ -1,0 +1,8 @@
+scoreboard players set @s st_defense 60
+scoreboard players set @s st_chance 100
+
+clear @s #main:armour_items{stormtrooper:1b}
+item replace entity @s armor.head with player_head{display:{Name:'{"text":"Storm Trooper Helmet","color":"white","italic":false}',Lore:['{"text":"10% Defense"}']},chance:25,def:10,equipt:1b,stormtrooper:1b,SkullOwner:{Id:[I;1960732308,-1057210285,-1740874431,209500971],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdjYTJhYThhOWY1ZDMyNDZlZTdmMmQwN2UxZDVmZDQ4MTkxMjVlY2RkZjVhNzJlMmY2NzUzNTVhM2I5YmNjIn19fQ=="}]}}} 1
+item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Storm Trooper Chestplate","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"25% Defense"}'],color:16777215},stormtrooper:1b,def:25,chance:25} 1
+item replace entity @s armor.legs with leather_leggings{display:{Name:'{"text":"Storm Trooper Leggings","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"15% Defense"}'],color:16777215},stormtrooper:1b,def:15,chance:25} 1
+item replace entity @s armor.feet with leather_boots{display:{Name:'{"text":"Storm Trooper Boots","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"10% Defense"}'],color:16777215},stormtrooper:1b,def:10,chance:25} 1

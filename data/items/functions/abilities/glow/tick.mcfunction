@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=glower] at @s unless entity @a[tag=glow,distance=..1] run function items:abilities/glow/glow

@@ -2,7 +2,7 @@
 tag @s add hit
 
 #BLOCK DETECTION
-execute if score @s bc matches 1.. run tag @s add blocked
+execute if score @s st_bc matches 1.. run tag @s add blocked
 
 #DAMAGING
 #   - REMOVE ABSORPTION BECUASE BREAKS SYSTEM

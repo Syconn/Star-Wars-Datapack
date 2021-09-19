@@ -7,13 +7,13 @@ execute store result score .damage .damage run data get entity @e[type=armor_sta
 execute store result score .health .damage run data get entity @s Health
 
 #   - CHECKS IF HEAD SHOT
-execute if entity @s[type=#main:humanoid,distance=1.65..] run scoreboard players operation .damage .damage *= 2 num
+execute if entity @s[type=#main:humanoid,distance=1.65..] run scoreboard players operation .damage .damage *= 2 st_num
 scoreboard players operation .health .damage -= .damage .damage
 
 #   - APPLIES TO PLAYER
 #       - FIND ALTERNATIVE TO MULT BY 10
 execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage += .damage .damage
-execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage *= 10 num
+execute if entity @s[type=player,tag=!blocked] run scoreboard players operation @s st_damage *= 10 st_num
 
 execute if score .health .damage matches ..0 as @s run function damage:kill
 

@@ -3,6 +3,7 @@ function items:abilities/lightsaber/tick
 function items:abilities/throw_blade/tick
 function items:abilities/grenades/tick
 function items:update_id
+function items:abilities/glow/tick
 
 #GUNS
 function items:abilities/blaster/sneak

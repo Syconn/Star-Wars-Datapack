@@ -1,0 +1,8 @@
+scoreboard players set @s st_defense 80
+scoreboard players set @s st_chance 100
+
+clear @s #main:armour_items{clonetrooper:1b}
+item replace entity @s armor.head with player_head{display:{Name:'{"text":"Clone Trooper Helmet","color":"white","italic":false}',Lore:['{"text":"15% Defense"}']},chance:25,def:15,equipt:1b,clonetrooper:1b,SkullOwner:{Id:[I;-170455351,-1945746450,-1122853993,1114846727],Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE1OWVkNjg1ZmFkYTM2ZDJjNTViYTM2MDUwNDI2OTM0MDg5MjBmMzA0MTRmNzI3ZTE4ZTU1MjAxODllNmU3MyJ9fX0="}]}}} 1
+item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Clone Trooper Chestplate","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"30% Defense"}'],color:16777215},clonetrooper:1b,def:30,chance:25} 1
+item replace entity @s armor.legs with leather_leggings{display:{Name:'{"text":"Clone Trooper Leggings","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"20% Defense"}'],color:16777215},clonetrooper:1b,def:20,chance:25} 1
+item replace entity @s armor.feet with leather_boots{display:{Name:'{"text":"Clone Trooper Boots","color":"white","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}',Lore:['{"text":"15% Defense"}'],color:16777215},clonetrooper:1b,def:15,chance:25} 1

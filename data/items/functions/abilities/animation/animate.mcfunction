@@ -17,7 +17,7 @@ scoreboard players remove .data .anim 2430000
 scoreboard players operation .setMax .anim = .max .anim
 
 #   - FIND WHAT NUMBER TO PUT INFRONT
-scoreboard players operation .max .anim *= 100 num
+scoreboard players operation .max .anim *= 100 st_num
 execute if score .data .anim < .max .anim run scoreboard players add .model .anim 100
 execute if score .data .anim > .max .anim run scoreboard players operation .model .anim = .def .anim
 
